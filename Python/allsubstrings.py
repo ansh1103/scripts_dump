@@ -28,7 +28,7 @@ def minimum_substring(string, pattern):
         if pattern[i] in string:
             char_index_in_string.append(string.index(pattern[i]))
     print(char_index_in_string)
-    char_index_in_string.sort()
+    print(sorted(char_index_in_string))
     substring = ''
     for i in range(char_index_in_string[0], char_index_in_string[-1]):
         substring += string[i]
@@ -61,8 +61,8 @@ def get_substring_freq(s):
 
     return result
 
-# print(generateSubstrings('Geeks'))
+print(generateSubstrings('Geekforgeeks'))
 
-# print(minimum_substring('Geekforgeeks', 'gks'))
+print(minimum_substring('Geekforgeeks', 'rge'))
 
-print(get_substring_freq('abababa'))
+print(get_substring_freq('Geekforgeeks'))

@@ -7,3 +7,18 @@ def bracketmatcher():
     :return:
     """
     pass
+def check_brackets(string):
+    stack = []
+    bracket_map = {')': '(', '}': '{', ']': '['}
+    for char in string:
+        if char in bracket_map.values():
+            stack.append(char)
+        elif char in bracket_map.keys():
+            if not stack or stack[-1] != bracket_map[char]:
+                return False
+            else:
+                stack.pop()
+    return not stack
+
+string = "({}[)"
+print(check_brackets(string))

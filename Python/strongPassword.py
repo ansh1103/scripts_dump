@@ -32,7 +32,7 @@ def minimumNumber(n, password):
 
 
 if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+    
 
     n = int(input())
 
@@ -40,6 +40,4 @@ if __name__ == '__main__':
 
     answer = minimumNumber(n, password)
 
-    fptr.write(str(answer) + '\n')
-
-    fptr.close()
+    print(answer)

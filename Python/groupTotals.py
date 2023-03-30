@@ -26,6 +26,6 @@ summed up
 
 
 if __name__ == '__main__':
-    print(groupTotals(["Z:0", "A:-1"]))
+    print(groupTotals(["B:-1", "A:1", "B:3", "A:5"]))
 
 

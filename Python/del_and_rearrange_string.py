@@ -30,7 +30,7 @@ def make_string(str1, str2):
 
 if __name__ == "__main__":
     string1 = "Hello"
-    string2 = "dnaKfhelddf"
+    string2 = "dnaKfHelddfol"
     if make_string(string1, string2):
         print("possible")
     else:

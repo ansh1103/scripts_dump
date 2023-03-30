@@ -26,4 +26,4 @@ def palindromeIndex(s):
     return -1
 
 
-print(palindromeIndex('baa'))
+print(palindromeIndex('lolt'))
